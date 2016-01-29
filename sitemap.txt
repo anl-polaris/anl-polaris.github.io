@@ -1,0 +1,5 @@
+http://vsokolov.org/index.html
+http://vsokolov.org/cv.html
+http://vsokolov.org/research.html
+http://vsokolov.org/teaching.html
+http://vsokolov.org/software.html

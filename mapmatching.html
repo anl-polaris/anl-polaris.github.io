@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Polaris</title>
+<link href="defaultstyles.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+<div id="container">
+    <div id="wrapper">
+    <div id="banner">
+    	<h1>Map matching tools for connecting GPS data to network models</h1>
+    	<p>(c) Argonne National Laboratory</p>
+    </div>
+    <div id="nav">
+    	<ul>
+      	<li><a href="index.html">Home</a></li>
+ <!--           <li><a href="cv.html">CV</a></li>	-->
+			<li><a href="people.html">People</a></li>
+            <li><a href="mapmatching.html">Map matching</a></li>
+            <li><a href="publications.html">Publications</a></li>
+			<li><a href="links.html">links</a></li>
+ <!--           <li><a href="software.html">Software</a></li>-->
+        </ul>
+    </div>
+    <div id="page">
+		
+        <div id="content">
+        
+        <div id="sidebar">
+        		<img src="image/map.png" title="Map matching" id="map_pic"/>
+        		<h3>Contact</h3>
+        		<p>Argonne National Laboratory<br />
+  				9700 S Cass Ave <br/>
+ 				Lemont, IL, 60439<br />
+				<a href="mailto:jauld@anl.gov">jauld@anl.gov</a><br />
+				<a href="https://github.com/anl-polaris/map-matching">Map-matching github page</a><br />
+        	</div>
+		
+		<p>Data from GPS-enabled vehicles has become more and more widely used by travel-behavior researchers 
+		and transportation system modelers. However as the GPS data has measurement and sampling errors  it 
+		becomes a non-trivial task to infer a map feature associated with a sequence of GPS measurements, 
+		especially as maps features may also have inaccuracies. The task of assigning a set of GPS points to 
+		a set of map features is called the map matching problem, and the requirement for the assigned features
+		to form a consistent travel route adds additional complexity. The majority of the existing algorithms 
+		concentrate on scenarios when sampling rate is low and/or measurement error is high. However, as GPS 
+		devices become more accurate and sampling rate becomes higher, a new issue arises, the issue of efficiently
+		of analyzing large scale high frequency GPS data sets.  This software allows for the analysis of high-accuracy and 
+		high-frequency GPS data sets using a modified version of the Multiple Hypothesis Technique to match network links,
+		with accuracy and computational efficiency being the focus. The software is implemented in Python using the Spatialite
+		library for GIS functionality, and works with the POLARIS database format. The software builds on existing work in several ways:
+		<ul>
+		<li>(i) Speed-up step that significantly reduces the number of candidate paths</li>
+		<li>(ii) Improved the way GPS trace segments are matched to road network at turns and intersections</li>
+		<li>(iii) Added new filtering step to identify U-Turn movements
+		<li>(iv)We demonstrate the process of manually fitting the parameters of the algorithm
+		</p>
+		<p>
+		Luo, Q., J. Auld, V. Sokolov 2016. Addressing some issues of map-matching for large-scale, high-frequency GPS data sets. Presented at the Transportation Research Board 95th Annual Meeting. (<a href="https://github.com/anl-polaris/anl-polaris.github.io/blob/master/trb16_map_matching.pdf">paper</a>)
+		</p>
+</div>
+	</div>
+    </div>
+    <!-- <div id="footer">
+    	<script type="text/javascript">ucbfooter();</script>
+        &copy; Regents of the University of Colorado
+    </div> -->
+</div>
+</body>
+</html>
